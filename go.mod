@@ -1,4 +1,4 @@
-module github.com/citrix/terraform-provider-citrixadc
+module github.com/kuleuven/terraform-provider-citrixadc
 
 go 1.18
 
