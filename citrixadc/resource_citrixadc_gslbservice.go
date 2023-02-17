@@ -344,7 +344,7 @@ func readGslbserviceFunc(d *schema.ResourceData, meta interface{}) error {
 	d.Set("ipaddress", data["ipaddress"])
 	d.Set("maxaaausers", data["maxaaausers"])
 	d.Set("maxbandwidth", data["maxbandwidth"])
-	d.Set("maxclient", data["maxclient"])
+	setToInt("maxclient", d, data["maxclient"])
 	d.Set("monitornamesvc", data["monitornamesvc"])
 	d.Set("monthreshold", data["monthreshold"])
 	d.Set("naptrdomainttl", data["naptrdomainttl"])
